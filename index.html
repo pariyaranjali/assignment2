@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Assignment - 2</title>
+	<style type="text/css">
+		.profile{
+			text-align: center;
+      color: black;
+		}
+    .horarySigns{
+      width: 500px;
+      height: 600px;
+    }
+    .prompt{
+      background-color: red;
+    }
+    body{
+      background-color: #f0f8ff;
+      text-align: center;
+      color: green;
+    }
+	</style>
+</head>
+<body>
+  <div class="profile">
+  	<hr>
+  	<h2> “Lear year and 12 horary Sign Assignment - 2 </h2>
+  	 <p><b>Name: </b>Pariyar Anjali<br>
+  	    <b>Student Id: </b>M22W0186<br>
+        <b>Subject:</b> Web Programming 2<br>
+  	</p>	
+  	 <hr>
+  </div>
+
+
+  <script type="text/javascript">
+  
+
+  function horarySigns(year){
+    //calculate the remdiner to check horary signs
+     var remidner = year%12;
+    
+     switch(remidner){
+       
+
+      case 0:
+        document.write("<h2>Monkey</h2>");
+        document.write("<img class='horarySigns' src='img/Monkey.jpg'>")
+        break;
+      case 1:
+        document.write("<h2>Cock</h2>");
+        document.write("<img class='horarySigns' src='img/Cock.jpg'>")
+        break;
+      case 2:
+        document.write("<h2>Dog</h2>");
+        document.write("<img class='horarySigns' src='img/Dog.jpg'>")
+        break;
+      case 3:
+        document.write("<h2>Boar</h2>");
+        document.write("<img class='horarySigns' src='img/Boar.jpg'>")
+        break;
+      case 4:
+        document.write("<h2>Rat</h2>");
+        document.write("<img class='horarySigns' src='img/Rat.jpg'>")
+        break;
+      case 5:
+        document.write("<h2>Ox</h2>");
+        document.write("<img class='horarySigns' src='img/Ox.jpg'>")
+        break;
+      case 6:
+        document.write("<h2>Tiger</h2>");
+        document.write("<img class='horarySigns' src='img/Tiger.jpg'>")
+        break;
+      case 7:
+        document.write("<h2>Hare</h2>");
+        document.write("<img class='horarySigns' src='img/Hare.jpg'>")
+        break;
+      case 8:
+        document.write("<h2>Dragon</h2>");
+        document.write("<img class='horarySigns' src='img/Dragon.jpg'>")
+        break;
+      case 9:
+        document.write("<h2>Serpent</h2>");
+        document.write("<img class='horarySigns' src='img/Serpent.jpg'>")
+        break;
+      case 10:
+        document.write("<h2>Horse</h2>");
+        document.write("<img class='horarySigns' src='img/Horse.jpg'>")
+        break;
+      case 11:
+        document.write("<h2>Sheep</h2>");
+        document.write("<img class='horarySigns' src='img/Sheep.jpg'>")
+        break;
+          document.write("<h2>remidner is not in between from 0 to 11</h2>");
+      default:
+     }
+
+
+  }
+  function printYear(year){
+    if(y%400 == 0){
+       document.write("<h4>",this.y,"<h4>"); 
+        document.write("<h2>Leap Year <h2>");
+
+    }else{
+     document.write("<h4>",this.y,"<h4>"); 
+        document.write("<h2>Common Year <h2>"); 
+    }
+
+
+}
+//Getting input from user 
+var y = prompt("Enter the year here");
+// parse the year in integer
+y = parseInt(y);
+
+//calling function to check wheter the input year is leap year or not
+printYear(y);
+//calling the function to pring horary Signs
+ horarySigns(y);
+  </script>
+</body>
+</html>
